@@ -1,0 +1,20 @@
+.about-page-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: 'Gravitas One', cursive;
+    font-size: 72px;
+    color: $text1;
+  }
+
+  svg,
+  ant-timeline-item-head {
+    color: $text2;
+    border-color: $text2;
+  }
+}

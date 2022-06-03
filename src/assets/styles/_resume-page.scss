@@ -1,0 +1,22 @@
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-bottom: 2rem;
+  .react-pdf__Document {
+    box-shadow: $box-shadow;
+  }
+  #resume-download-button {
+    margin: 20px 0px 20px 0px;
+    color: $text1;
+    &:hover {
+      color: $text2;
+    }
+    svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

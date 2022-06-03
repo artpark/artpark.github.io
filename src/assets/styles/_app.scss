@@ -1,0 +1,37 @@
+// .sider {
+//   height: 100vh;
+//   background: $text1;
+//   h1 {
+//     font-family: 'Montserrat', sans-serif;
+//     text-align: center;
+//     color: $page1;
+//     font-size: 22px;
+//   }
+// }
+
+// #profile-picture {
+//   width: 100%;
+//   border-radius: 50%;
+//   padding: 10%;
+// }
+.layout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  background: $page1;
+  padding-bottom: $footer-height;
+}
+
+.navbar-responsive {
+  background: $page1;
+  .ant-menu {
+    border-bottom: 0px;
+    background: rgba(0, 0, 0, 0);
+    .ant-menu-item-active,
+    .ant-menu-item-selected {
+      border-color: $text1;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background: $page1;
+
+  @keyframes fadeIn {
+    0% {
+      color: $page1;
+    }
+    100% {
+      color: $text1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      color: $page1;
+    }
+    100% {
+      color: $text1;
+    }
+  }
+
+  .name {
+    animation: fadeOut 0.75s;
+    &:hover {
+      animation: fadeIn 0.75s;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+
+    .ant-menu {
+      border-bottom: 0px;
+      background: rgba(0, 0, 0, 0);
+      .ant-menu-item-active,
+      .ant-menu-item-selected {
+        color: $text2;
+        border-color: $text2;
+      }
+    }
+
+    li {
+      margin-left: 25px;
+    }
+  }
+  #sider-toggle-button {
+    color: $text1;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.breakpoint__small-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breakpoint__medium-up {
+  display: flex;
+}
